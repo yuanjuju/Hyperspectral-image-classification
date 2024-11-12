@@ -77,7 +77,7 @@ def classify_user_input():
     label_file_path = get_label_file()
     X_pca, y = process_input_mat(mat_file_path, label_file_path)
 
-    # 对第一个样本进行预测
+    # 随意找一个样本进行预测
     sample_index =60
     sample = X_pca[sample_index]
     prediction = predict(sample)
