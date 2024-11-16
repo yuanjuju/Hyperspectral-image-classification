@@ -20,9 +20,9 @@
 - **HTML/CSS/JavaScript**：用于前端页面设计。
 
 ### 框架与库  
-- **后端**：Django（WEB 框架）。  
-- **前端**：Bootstrap 或其他前端框架（提升界面美观）。  
-- **深度学习**：PyTorch 或 TensorFlow（训练与加载模型）。  
+- **后端**：Django。  
+- **前端**：Bootstrap 或其他前端框架。  
+- **深度学习**：PyTorch。  
 
 ### 其他工具  
 - **数据处理**：NumPy、Pandas。  
