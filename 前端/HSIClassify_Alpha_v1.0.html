@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高光谱图像分类系统</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">高光谱图像分类系统</h1>
+        <hr>
+        
+        <!-- 文件上传区域 -->
+        <div class="card shadow p-4">
+            <h4 class="mb-4">上传高光谱图像</h4>
+            <form id="uploadForm">
+                <div class="mb-3">
+                    <label for="fileInput" class="form-label">选择文件：</label>
+                    <input type="file" class="form-control" id="fileInput" name="file" accept=".mat,.tif" required>
+                </div>
+                <button type="submit" class="btn btn-primary">上传并分类</button>
+            </form>
+        </div>
+
+        <!-- 上传进度 -->
+        <div class="progress mt-4" id="progressBarContainer" style="display: none;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" id="progressBar" style="width: 0%;">0%</div>
+        </div>
+
+        <!-- 分类结果显示 -->
+        <div class="card shadow mt-5 p-4" id="resultCard" style="display: none;">
+            <h4>分类结果</h4>
+            <p id="resultText">分类结果将在此处显示。</p>
+            <div id="resultImageContainer"></div>
+            <button class="btn btn-success mt-3" id="downloadButton" style="display: none;">下载结果</button>
+        </div>
+    </div>
+
+    <script>
+        const uploadForm = document.getElementById('uploadForm');
+        const progressBarContainer = document.getElementById('progressBarContainer');
+        const progressBar = document.getElementById('progressBar');
+        const resultCard = document.getElementById('resultCard');
+        const resultText = document.getElementById('resultText');
+        const resultImageContainer = document.getElementById('resultImageContainer');
+        const downloadButton = document.getElementById('downloadButton');
+
+        // 监听表单提交事件
+        uploadForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // 获取文件
+            const fileInput = document.getElementById('fileInput');
+            if (!fileInput.files.length) {
+                alert('请选择一个文件进行上传！');
+                return;
+            }
+            const file = fileInput.files[0];
+
+            // 显示上传进度条
+            progressBarContainer.style.display = 'block';
+            progressBar.style.width = '0%';
+            progressBar.textContent = '0%';
+
+            // 构建 FormData
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                // 上传文件到服务器
+                const response = await fetch('/upload/', {
+                    method: 'POST',
+                    body: formData,
+                });
+
+                if (!response.ok) {
+                    throw new Error('上传失败');
+                }
+
+                // 模拟上传进度
+                let progress = 0;
+                const interval = setInterval(() => {
+                    if (progress < 100) {
+                        progress += 10;
+                        progressBar.style.width = `${progress}%`;
+                        progressBar.textContent = `${progress}%`;
+                    } else {
+                        clearInterval(interval);
+                    }
+                }, 200);
+
+                // 获取分类结果
+                const result = await response.json();
+                resultCard.style.display = 'block';
+                resultText.textContent = result.message;
+
+                if (result.imageUrl) {
+                    const img = document.createElement('img');
+                    img.src = result.imageUrl;
+                    img.className = 'img-fluid mt-3';
+                    resultImageContainer.appendChild(img);
+                    downloadButton.style.display = 'inline-block';
+                    downloadButton.href = result.imageUrl;
+                    downloadButton.download = 'classification_result.png';
+                }
+            } catch (error) {
+                alert('发生错误：' + error.message);
+            } finally {
+                progressBarContainer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
