@@ -94,7 +94,7 @@ def classify_user_input():
     sample = X_pca[sample_index]
     prediction = predict(sample)
 
-    # 获取实际类别
+
     if y is not None:
         actual_class = y[sample_index].item()
         actual_class_name = class_mapping.get(actual_class, "未知类别")
