@@ -43,20 +43,14 @@ net.eval()  # 设置模型为评估模式
 
 # 预测函数
 def predict(input_data):
-    """
-    对单个样本进行预测
-    """
     input_data = input_data.unsqueeze(0).to(device)  # 添加 batch 维度
     with torch.no_grad():
         outputs = net(input_data)
         _, predicted = torch.max(outputs, 1)
     return predicted.item()
 
-# 数据处理函数
+# 数据处理函数，动态调整窗口大小
 def process_input_mat(input_file, label_file=None):
-    """
-    加载并处理输入的 .mat 文件，支持动态调整窗口和标签。
-    """
     mat_data = sio.loadmat(input_file)
     X = mat_data[list(mat_data.keys())[-1]]  # 动态提取数据部分
 
@@ -81,9 +75,6 @@ def process_input_mat(input_file, label_file=None):
 
 # 用户输入与预测
 def classify_user_input():
-    """
-    对用户输入的图像文件进行分类，并生成伪彩色图像和原始图像。
-    """
     # 加载数据文件路径
     mat_file_path = 'data/Indian_pines_corrected.mat'
     label_file_path = 'data/Indian_pines_gt.mat'
