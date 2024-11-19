@@ -20,14 +20,17 @@ pca_components = 30
 X = sio.loadmat('data/Indian_pines_corrected.mat')['indian_pines_corrected']
 y = sio.loadmat('data/Indian_pines_gt.mat')['indian_pines_gt']
 
+print("原始图像大小:", X.shape)
+
 # 数据预处理:pca降维
 X_pca = applyPCA(X, numComponents=pca_components)
+print("PCA 降维后的大小:", X_pca.shape)
 
 
  # 创建数据立方体
 X_pca, y = createImageCubes(X_pca, y, windowSize=windowSize)
-# print('数据立方体 X 的形状: ', X_pca.shape)
-# print('数据立方体 y 的形状: ', y.shape)
+print('数据立方体 X 的形状: ', X_pca.shape)
+print('数据立方体 y 的形状: ', y.shape)
 
 # 划分训练集和测试集
 Xtrain, Xtest, ytrain, ytest = splitTrainTestSet(X_pca, y, test_ratio)
@@ -37,6 +40,9 @@ Xtrain, Xtest, ytrain, ytest = splitTrainTestSet(X_pca, y, test_ratio)
 # 数据形状调整
 Xtrain = Xtrain.reshape(-1, windowSize, windowSize, pca_components, 1)
 Xtest = Xtest.reshape(-1, windowSize, windowSize, pca_components, 1)
+print("调整后的训练集大小:", Xtrain.shape)
+print("调整后的测试集大小:", Xtest.shape)
+
 
 # 转置数据以适应 PyTorch 格式
 Xtrain = Xtrain.transpose(0, 4, 3, 1, 2)
@@ -188,8 +194,8 @@ def plot_metrics(train_losses, test_accuracies, output_dir):
 
 
 
-if __name__ == '__main__':
-    train_model()
+# if __name__ == '__main__':
+#     train_model()
 
 
 # import torch
