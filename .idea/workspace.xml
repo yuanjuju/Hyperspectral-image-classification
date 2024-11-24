@@ -4,24 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5556536-d116-4913-9adf-008b5860de78" name="更改" comment="修改优化模型代码">
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/data/Indian_pines_corrected.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/data/Indian_pines_gt.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/download.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/forecast.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/forecast2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/output/20241109-111322/model.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/output/20241109-111322/test_accuracy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/output/20241109-111322/train_loss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/output/20241111-212418/model.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/output/20241111-212418/test_accuracy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/output/20241111-212418/train_loss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/src/data_processing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/src/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HybridSN(卷积模型)/data/Salinas_corrected.mat" beforeDir="false" afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/data/Salinas_corrected.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HybridSN(卷积模型)/data/Salinas_gt.mat" beforeDir="false" afterPath="$PROJECT_DIR$/HybridSN(卷积模型)/data/Salinas_gt.mat" afterDir="false" />
+    <list default="true" id="a5556536-d116-4913-9adf-008b5860de78" name="更改" comment="修改预测函数">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,27 +79,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.data_processing.executor": "Run",
-    "Python.download.executor": "Run",
-    "Python.forecast.executor": "Run",
-    "Python.forecast2.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.model.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/user/person/desktop/比赛",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.gitee.ui.GiteeSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.data_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.download.executor&quot;: &quot;Run&quot;,
+    &quot;Python.forecast.executor&quot;: &quot;Run&quot;,
+    &quot;Python.forecast2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/user/person/desktop/比赛&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.gitee.ui.GiteeSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\python file\classify\classify.venv\data" />
@@ -159,7 +144,8 @@
       <workItem from="1731921851016" duration="1118000" />
       <workItem from="1731975978263" duration="5808000" />
       <workItem from="1731982093258" duration="249000" />
-      <workItem from="1731992938778" duration="289000" />
+      <workItem from="1731992938778" duration="2278000" />
+      <workItem from="1731995245477" duration="556000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -433,7 +419,39 @@
       <option name="project" value="LOCAL" />
       <updated>1731982186324</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="test">
+      <option name="closed" value="true" />
+      <created>1731994342885</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1731994342885</updated>
+    </task>
+    <task id="LOCAL-00036" summary="test">
+      <option name="closed" value="true" />
+      <created>1731994608610</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1731994608610</updated>
+    </task>
+    <task id="LOCAL-00037" summary="test">
+      <option name="closed" value="true" />
+      <created>1731994842745</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1731994842745</updated>
+    </task>
+    <task id="LOCAL-00038" summary="修改预测函数">
+      <option name="closed" value="true" />
+      <created>1731995671483</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1731995671483</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +482,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="尝试" />
-    <MESSAGE value="test" />
     <MESSAGE value="Merge branch 'master' of https://gitee.com/yuan-jiajunun/classifys" />
     <MESSAGE value="xiugai" />
     <MESSAGE value="测试" />
@@ -474,7 +491,9 @@
     <MESSAGE value="1" />
     <MESSAGE value="更新" />
     <MESSAGE value="修改优化模型代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改优化模型代码" />
+    <MESSAGE value="test" />
+    <MESSAGE value="修改预测函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改预测函数" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/classify$download.coverage" NAME="download 覆盖结果" MODIFIED="1730990720916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classify.venv" />
