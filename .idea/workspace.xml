@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5556536-d116-4913-9adf-008b5860de78" name="更改" comment="修改">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a5556536-d116-4913-9adf-008b5860de78" name="更改" comment="更新" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,11 +104,11 @@
       <recent name="D:\python file\classify\classify.venv\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\python file\classify\后端" />
       <recent name="D:\python file\classify\HybridSN\input" />
       <recent name="D:\python file\classify\HybridSN\data" />
       <recent name="D:\python file\classify\HybridSN" />
       <recent name="D:\python file\classify\classify.venv" />
-      <recent name="D:\python file\classify\classify.env" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -146,7 +144,7 @@
       <workItem from="1731982093258" duration="249000" />
       <workItem from="1731992938778" duration="2278000" />
       <workItem from="1731995245477" duration="556000" />
-      <workItem from="1732453695964" duration="1173000" />
+      <workItem from="1732453695964" duration="1333000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -468,7 +466,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732453767500</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="后端代码">
+      <option name="closed" value="true" />
+      <created>1732455397368</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1732455397368</updated>
+    </task>
+    <task id="LOCAL-00042" summary="更新">
+      <option name="closed" value="true" />
+      <created>1732455444628</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1732455444628</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,12 +519,13 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="ycg的分类代码" />
     <MESSAGE value="1" />
-    <MESSAGE value="更新" />
     <MESSAGE value="修改优化模型代码" />
     <MESSAGE value="test" />
     <MESSAGE value="修改预测函数" />
     <MESSAGE value="修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+    <MESSAGE value="后端代码" />
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/classify$download.coverage" NAME="download 覆盖结果" MODIFIED="1730990720916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classify.venv" />
