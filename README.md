@@ -20,7 +20,7 @@
 - **HTML/CSS/JavaScript**：用于前端页面设计。
 
 ### 框架与库  
-- **后端**：Django。  
+- **后端**：Flash。  
 - **前端**：Bootstrap 或其他前端框架。  
 - **深度学习**：PyTorch。  
 
