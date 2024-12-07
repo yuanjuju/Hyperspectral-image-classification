@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5556536-d116-4913-9adf-008b5860de78" name="更改" comment="更新" />
+    <list default="true" id="a5556536-d116-4913-9adf-008b5860de78" name="更改" comment="环境">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/前端/vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/前端/vue/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/前端/vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/前端/vue/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/前端/vue/src/components/MyHtmlPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/前端/vue/src/components/MyHtmlPage.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +71,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -89,18 +94,25 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/user/person/desktop/比赛&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/python file/classify/前端/vue/public&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.serve.executor&quot;: &quot;Run&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.gitee.ui.GiteeSettingsConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\pycharm professional\\PyCharm 2023.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python file\classify\前端\vue\public" />
+      <recent name="D:\python file\classify\前端\vue\public\images" />
       <recent name="D:\python file\classify\classify.venv\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -110,6 +122,34 @@
       <recent name="D:\python file\classify\HybridSN" />
       <recent name="D:\python file\classify\classify.venv" />
     </key>
+  </component>
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/前端/vue/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/前端/vue/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.serve" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -144,7 +184,13 @@
       <workItem from="1731982093258" duration="249000" />
       <workItem from="1731992938778" duration="2278000" />
       <workItem from="1731995245477" duration="556000" />
-      <workItem from="1732453695964" duration="1333000" />
+      <workItem from="1732453695964" duration="2148000" />
+      <workItem from="1732535108461" duration="46000" />
+      <workItem from="1732535168460" duration="614000" />
+      <workItem from="1732537684688" duration="2451000" />
+      <workItem from="1733790277674" duration="5455000" />
+      <workItem from="1733895935013" duration="195000" />
+      <workItem from="1733900783561" duration="113000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -482,7 +528,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732455444628</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="更新">
+      <option name="closed" value="true" />
+      <created>1732455513462</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1732455513462</updated>
+    </task>
+    <task id="LOCAL-00044" summary="环境">
+      <option name="closed" value="true" />
+      <created>1732459508513</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1732459508513</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +587,8 @@
     <MESSAGE value="修改" />
     <MESSAGE value="后端代码" />
     <MESSAGE value="更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新" />
+    <MESSAGE value="环境" />
+    <option name="LAST_COMMIT_MESSAGE" value="环境" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/classify$download.coverage" NAME="download 覆盖结果" MODIFIED="1730990720916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classify.venv" />
