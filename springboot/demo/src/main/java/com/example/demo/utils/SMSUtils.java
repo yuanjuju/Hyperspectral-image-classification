@@ -22,8 +22,8 @@ public class SMSUtils {
     public static void sendMessage(String signName, String templateCode, String phoneNumbers, String param) {
         // 创建阿里云短信服务的客户端配置
         DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou",
-                "LTAI5tAWxQZbJrmxDV6f25jN",  // 你的AccessKey ID
-                "PWdoePBavzZjxeOF7JGw2VZufMdH3b"); // 你的AccessKey Secret
+               ,  // 你的AccessKey ID
+               ); // 你的AccessKey Secret
         IAcsClient client = new DefaultAcsClient(profile);
 
         // 创建短信发送请求对象
