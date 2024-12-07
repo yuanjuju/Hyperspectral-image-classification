@@ -1,29 +1,3 @@
-<<<<<<< HEAD
-# pythonvue
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
 # 高光谱图像分类
 
 ## 介绍
@@ -65,4 +39,3 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 
->>>>>>> be7aa627392dfa42d5313483fbb0fe248bc32296
