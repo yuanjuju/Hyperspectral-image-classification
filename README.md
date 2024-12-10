@@ -18,6 +18,14 @@
 2. 前端使用vue框架，需要在/前端/vue的目录下使用npm run serve 启动，具体教程可以参考如下博客：
 https://blog.csdn.net/qq_45677671/article/details/114546577?fromshare=blogdetail&sharetype=blogdetail&sharerId=114546577&sharerefer=PC&sharesource=m0_73966002&sharefrom=from_link
 
+3.springboot的后端：springboot/demo/src/main/java/com/example/demo路径下可以直接运行DemoApplication.java启动类启动。
+
+4.工具教程这一栏里有较为详细的git使用教程，对此不熟悉的可以学习。
+
+5. 项目需求这里有用户，开发工程师，客户等的需求。
+
+6. 参考资料里有我们模型的具体解析。
+
 
 ## 工具与技术栈  
 
