@@ -14,6 +14,9 @@
 2. 学习 Flash 开发流程并掌握项目部署方法。
 
 ## 使用方法
+1. 再文件路径HybridSN卷积模型（flask）/output/20241111-212418内有我们训练好的模型，可以直接使用，或者也可以在HybridSN卷积模型（flask）/main.py下自由训练模型使用，所有与模型有关的内容均在HybridSN卷积模型（flask）内。
+2. 前端使用vue框架，需要在/前端/vue的目录下使用npm run serve 启动，具体教程可以参考如下博客：
+https://blog.csdn.net/qq_45677671/article/details/114546577?fromshare=blogdetail&sharetype=blogdetail&sharerId=114546577&sharerefer=PC&sharesource=m0_73966002&sharefrom=from_link
 
 
 ## 工具与技术栈  
