@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5556536-d116-4913-9adf-008b5860de78" name="更改" comment="环境">
+    <list default="true" id="a5556536-d116-4913-9adf-008b5860de78" name="更改" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/前端/vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/前端/vue/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/前端/vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/前端/vue/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/前端/vue/src/components/MyHtmlPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/前端/vue/src/components/MyHtmlPage.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +17,17 @@
       <list>
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Merge.Settings">
@@ -39,6 +47,11 @@
         </map>
       </branch-storage>
     </excluded-from-favorite>
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="尹崇高 &lt;1092352161@qq.com&gt;" />
+      </list>
+    </option>
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--tags" />
@@ -116,11 +129,11 @@
       <recent name="D:\python file\classify\classify.venv\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\python file\classify\HybridSN卷积模型（flask）" />
       <recent name="D:\python file\classify\后端" />
       <recent name="D:\python file\classify\HybridSN\input" />
       <recent name="D:\python file\classify\HybridSN\data" />
       <recent name="D:\python file\classify\HybridSN" />
-      <recent name="D:\python file\classify\classify.venv" />
     </key>
   </component>
   <component name="RunManager" selected="npm.build">
@@ -191,6 +204,7 @@
       <workItem from="1733790277674" duration="5455000" />
       <workItem from="1733895935013" duration="195000" />
       <workItem from="1733900783561" duration="113000" />
+      <workItem from="1734400539064" duration="169000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -544,7 +558,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732459508513</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="update">
+      <option name="closed" value="true" />
+      <created>1734400609887</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1734400609887</updated>
+    </task>
+    <task id="LOCAL-00046" summary="update">
+      <option name="closed" value="true" />
+      <created>1734400636238</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1734400636238</updated>
+    </task>
+    <task id="LOCAL-00047" summary="update">
+      <option name="closed" value="true" />
+      <created>1734400674265</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1734400674265</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +626,9 @@
     <MESSAGE value="后端代码" />
     <MESSAGE value="更新" />
     <MESSAGE value="环境" />
-    <option name="LAST_COMMIT_MESSAGE" value="环境" />
+    <MESSAGE value="update springboot/demo/src/main/resources/application.properties.&#10;&#10;Signed-off-by: 尹崇高 &lt;1092352161@qq.com&gt;" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/classify$download.coverage" NAME="download 覆盖结果" MODIFIED="1730990720916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classify.venv" />
