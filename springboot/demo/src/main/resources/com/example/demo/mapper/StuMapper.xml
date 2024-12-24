@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.StuMapper">
+    <update id="modifyinformation" parameterType="Student">
+        UPDATE student
+        <set>
+            <if test="sname != null and sname != ''">sname = #{sname},</if>
+            <if test="sgrade != null and sgrade != ''">sgrade = #{sgrade},</if>
+            <if test="sprofession != null and sprofession != ''">sprofession = #{sprofession},</if>
+            <if test="sdept != null and sdept != ''">sdept = #{sdept},</if>
+            <if test="sidentity != null and sidentity != ''">sidentity = #{sidentity},</if>
+            <if test="sphone != null and sphone != ''">sphone = #{sphone},</if>
+            <if test="semail != null and semail != ''">semail = #{semail},</if>
+            <if test="password != null and password != ''">password = #{password},</if>
+        </set>
+        WHERE sno = #{sno}
+    </update>
+
+</mapper>

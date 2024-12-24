@@ -58,6 +58,7 @@ def createImageCubes(X, y, windowSize=5, removeZeroLabels=True):
 #         return patchesData[:patchIndex, :, :, :], None
 
 
+
 def splitTrainTestSet(X, y, testRatio, randomState=345):
     from sklearn.model_selection import train_test_split
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=testRatio, random_state=randomState, stratify=y)
