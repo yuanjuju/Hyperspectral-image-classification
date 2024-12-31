@@ -40,7 +40,6 @@
 
     <!-- 分类结果显示 -->
     <div v-if="resultMessage" class="card shadow mt-5 p-4">
-      <h4 class="text-success">分类结果</h4>
       <p>{{ resultMessage }}</p>
       <div v-if="predictions.length" class="prediction-results mt-3">
         <h5>预测结果:</h5>
