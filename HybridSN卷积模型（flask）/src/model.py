@@ -5,6 +5,8 @@ import torch.nn.functional as F
 class HybridSN(nn.Module):
     def __init__(self,windowSize,K,rate,class_num):
         super(HybridSN, self).__init__()
+        if windowSize < 9 or windowSize % 2 != 1 or K < 13 or not 1 <= rate <= 64:
+            raise ValueError("Expected odd window >= 9, spectral components >= 13, and ratio in [1, 64]")
         self.S = windowSize
         self.L = K #光谱通道数，即高光谱图像的光谱维度
         self.rate=rate #一个缩放因子，用于控制注意力机制的通道数量。
@@ -21,7 +23,7 @@ class HybridSN(nn.Module):
         self.sa1 = nn.Conv2d(64, 64 // rate, kernel_size=1)
         self.sa2 = nn.Conv2d(64 // rate, 64, kernel_size=1)
         #全连接层
-        self.dense1 = nn.Linear(18496, 256)
+        self.dense1 = nn.Linear(64 * (windowSize - 8) ** 2, 256)
         self.dense2 = nn.Linear(256, 128)
         self.dense3 = nn.Linear(128, class_num)
 
@@ -46,7 +48,7 @@ class HybridSN(nn.Module):
 
         weight = F.avg_pool2d(out, out.size(2))
         weight = F.relu(self.sa1(weight))
-        weight = F.sigmoid(self.sa2(weight))
+        weight = torch.sigmoid(self.sa2(weight))
         out = out * weight
 
         out = out.view(out.size(0), -1)
