@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">Hyperspectral classification: spectral–spatial model and artifact pipeline</title><desc id="desc">Schematic of spectral bands, frozen PCA, 3D and 2D convolutions, channel attention, and pixel classes. The illustrated map is conceptual, not a prediction.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1423"/><stop offset="1" stop-color="#132937"/></linearGradient><linearGradient id="cube" x2="1" y2="1"><stop stop-color="#58dfc3"/><stop offset="1" stop-color="#558cc8"/></linearGradient><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#688b9f" stroke-width="1.2"/></marker></defs>
+<rect width="1200" height="520" rx="20" fill="url(#bg)"/>
+<path d="M32 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M64 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M96 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M128 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M160 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M192 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M224 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M256 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M288 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M320 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M352 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M384 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M416 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M448 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M480 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M512 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M544 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M576 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M608 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M640 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M672 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M704 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M736 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M768 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M800 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M832 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M864 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M896 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M928 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M960 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M992 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M1024 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M1056 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M1088 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M1120 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M1152 150V392" stroke="#8fb2c1" opacity=".035"/>
+<path d="M1184 150V392" stroke="#8fb2c1" opacity=".035"/>
+<text x="44" y="45" fill="#77d9c5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" letter-spacing="2">REMOTE SENSING  /  PYTORCH + FLASK</text>
+<text x="44" y="97" fill="#f3f7f8" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="38" font-weight="650" >Spectral–spatial intelligence</text>
+<text x="44" y="127" fill="#a3becd" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="16" font-weight="400" >HybridSN · Channel recalibration · Frozen preprocessing · Versioned artifacts</text>
+<rect x="1031" y="30" width="126" height="28" rx="14" fill="#173c3d" stroke="#305f59"/>
+<text x="1050" y="49" fill="#9be8d4" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="11" font-weight="600" >HSI / SYSTEM</text>
+<rect x="58" y="196" width="100" height="108" rx="2" fill="#123e49" stroke="#58c4b5"/>
+<path d="M78 196v108M58 217.6h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M98 196v108M58 239.2h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M118 196v108M58 260.8h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M138 196v108M58 282.4h100" stroke="#67cdbd" opacity=".22"/>
+<rect x="70" y="190" width="100" height="108" rx="2" fill="#123e49" stroke="#58c4b5"/>
+<path d="M90 190v108M70 211.6h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M110 190v108M70 233.2h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M130 190v108M70 254.8h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M150 190v108M70 276.4h100" stroke="#67cdbd" opacity=".22"/>
+<rect x="82" y="184" width="100" height="108" rx="2" fill="#123e49" stroke="#58c4b5"/>
+<path d="M102 184v108M82 205.6h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M122 184v108M82 227.2h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M142 184v108M82 248.8h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M162 184v108M82 270.4h100" stroke="#67cdbd" opacity=".22"/>
+<rect x="94" y="178" width="100" height="108" rx="2" fill="#123e49" stroke="#58c4b5"/>
+<path d="M114 178v108M94 199.6h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M134 178v108M94 221.2h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M154 178v108M94 242.8h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M174 178v108M94 264.4h100" stroke="#67cdbd" opacity=".22"/>
+<rect x="106" y="172" width="100" height="108" rx="2" fill="#123e49" stroke="#58c4b5"/>
+<path d="M126 172v108M106 193.6h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M146 172v108M106 215.2h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M166 172v108M106 236.8h100" stroke="#67cdbd" opacity=".22"/>
+<path d="M186 172v108M106 258.4h100" stroke="#67cdbd" opacity=".22"/>
+<rect x="106" y="172" width="100" height="108" rx="2" fill="url(#cube)" stroke="#abf5dc"/>
+<path d="M126 172v108M106 193.6h100" stroke="#0f524f" opacity=".35"/>
+<path d="M146 172v108M106 215.2h100" stroke="#0f524f" opacity=".35"/>
+<path d="M166 172v108M106 236.8h100" stroke="#0f524f" opacity=".35"/>
+<path d="M186 172v108M106 258.4h100" stroke="#0f524f" opacity=".35"/>
+<text x="62" y="336" fill="#e0f0f3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" >01  SPECTRAL CUBE</text>
+<text x="62" y="359" fill="#a3becd" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="12" font-weight="400" >H × W × B → K components</text>
+<path d="M228 235h30" stroke="#688b9f" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M418 235h30" stroke="#688b9f" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M707 235h30" stroke="#688b9f" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M969 235h30" stroke="#688b9f" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="275" y="184" width="128" height="101" rx="8" fill="#102c36" stroke="#315769"/>
+<text x="293" y="213" fill="#8ee3d0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" >FROZEN PCA</text>
+<text x="293" y="239" fill="#f1f7f9" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="17" font-weight="500" >μ · W · scale</text>
+<text x="293" y="264" fill="#a3becd" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="12" font-weight="400" >fit once / reuse</text>
+<text x="275" y="336" fill="#e0f0f3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" >02  TRANSFORM</text>
+<text x="275" y="359" fill="#a3becd" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="12" font-weight="400" >Train / serve alignment</text>
+<rect x="463" y="171" width="221" height="127" rx="8" fill="#142b3b" stroke="#355166"/>
+<rect x="483" y="189.0" width="27" height="66" rx="2" fill="#5180a5" stroke="none"/>
+<rect x="521" y="182.0" width="27" height="80" rx="2" fill="#629dc0" stroke="none"/>
+<rect x="559" y="174.5" width="27" height="95" rx="2" fill="#77c0d2" stroke="none"/>
+<text x="598" y="215" fill="#dcf4fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="19" font-weight="600" >3D</text>
+<text x="598" y="240" fill="#8db9c9" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" >↓</text>
+<text x="598" y="264" fill="#dcf4fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="19" font-weight="600" >2D</text>
+<text x="463" y="336" fill="#e0f0f3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" >03  HYBRID ENCODER</text>
+<text x="463" y="359" fill="#a3becd" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="12" font-weight="400" >Spectral → spatial hierarchy</text>
+<rect x="752" y="184" width="190" height="101" rx="8" fill="#182b3c" stroke="#425773"/>
+<text x="771" y="213" fill="#b4c7ef" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" >CHANNEL GATING</text>
+<rect x="773" y="251" width="11" height="14" rx="2" fill="#839ad1" stroke="none"/>
+<rect x="791" y="233" width="11" height="32" rx="2" fill="#839ad1" stroke="none"/>
+<rect x="809" y="243" width="11" height="22" rx="2" fill="#839ad1" stroke="none"/>
+<rect x="827" y="228" width="11" height="37" rx="2" fill="#839ad1" stroke="none"/>
+<rect x="845" y="248" width="11" height="17" rx="2" fill="#839ad1" stroke="none"/>
+<rect x="863" y="236" width="11" height="29" rx="2" fill="#839ad1" stroke="none"/>
+<rect x="881" y="226" width="11" height="39" rx="2" fill="#839ad1" stroke="none"/>
+<rect x="899" y="241" width="11" height="24" rx="2" fill="#839ad1" stroke="none"/>
+<text x="752" y="336" fill="#e0f0f3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" >04  RECALIBRATION</text>
+<text x="752" y="359" fill="#a3becd" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="12" font-weight="400" >Global pooling → sigmoid</text>
+<rect x="1022" y="175" width="16" height="16" rx="1" fill="#5bd0a9" stroke="none"/>
+<rect x="1039" y="175" width="16" height="16" rx="1" fill="#5bd0a9" stroke="none"/>
+<rect x="1056" y="175" width="16" height="16" rx="1" fill="#5bd0a9" stroke="none"/>
+<rect x="1073" y="175" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1090" y="175" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1107" y="175" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1124" y="175" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1022" y="192" width="16" height="16" rx="1" fill="#5bd0a9" stroke="none"/>
+<rect x="1039" y="192" width="16" height="16" rx="1" fill="#5bd0a9" stroke="none"/>
+<rect x="1056" y="192" width="16" height="16" rx="1" fill="#5bd0a9" stroke="none"/>
+<rect x="1073" y="192" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1090" y="192" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1107" y="192" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1124" y="192" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1022" y="209" width="16" height="16" rx="1" fill="#5bd0a9" stroke="none"/>
+<rect x="1039" y="209" width="16" height="16" rx="1" fill="#5bd0a9" stroke="none"/>
+<rect x="1056" y="209" width="16" height="16" rx="1" fill="#5bd0a9" stroke="none"/>
+<rect x="1073" y="209" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1090" y="209" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1107" y="209" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1124" y="209" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1022" y="226" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1039" y="226" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1056" y="226" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1073" y="226" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1090" y="226" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1107" y="226" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1124" y="226" width="16" height="16" rx="1" fill="#61a0c8" stroke="none"/>
+<rect x="1022" y="243" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1039" y="243" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1056" y="243" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1073" y="243" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1090" y="243" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1107" y="243" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1124" y="243" width="16" height="16" rx="1" fill="#61a0c8" stroke="none"/>
+<rect x="1022" y="260" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1039" y="260" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1056" y="260" width="16" height="16" rx="1" fill="#377d75" stroke="none"/>
+<rect x="1073" y="260" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1090" y="260" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1107" y="260" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1124" y="260" width="16" height="16" rx="1" fill="#61a0c8" stroke="none"/>
+<rect x="1022" y="277" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1039" y="277" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1056" y="277" width="16" height="16" rx="1" fill="#adc96e" stroke="none"/>
+<rect x="1073" y="277" width="16" height="16" rx="1" fill="#61a0c8" stroke="none"/>
+<rect x="1090" y="277" width="16" height="16" rx="1" fill="#61a0c8" stroke="none"/>
+<rect x="1107" y="277" width="16" height="16" rx="1" fill="#61a0c8" stroke="none"/>
+<rect x="1124" y="277" width="16" height="16" rx="1" fill="#c7a471" stroke="none"/>
+<text x="1016" y="336" fill="#e0f0f3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" >05  PIXEL CLASSES</text>
+<text x="1016" y="359" fill="#a3becd" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="12" font-weight="400" >Schematic only</text>
+<path d="M44 394H1156" stroke="#345063"/>
+<text x="44" y="429" fill="#77d9c5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="1.5">TRAIN</text>
+<text x="115" y="429" fill="#d1e1e8" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="14" font-weight="400" >Stratified split → PCA fit → model weights + manifest</text>
+<text x="44" y="464" fill="#91b7e9" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="1.5">SERVE</text>
+<text x="115" y="464" fill="#d1e1e8" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="14" font-weight="400" >SHA-256 verification → lazy patch batches → row-major JSON</text>
+<rect x="1001" y="415" width="155" height="63" rx="8" fill="#193746" stroke="#355567"/>
+<text x="1018" y="440" fill="#a4c3d3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="11" font-weight="600" >LOCAL CPU PATH</text>
+<text x="1018" y="464" fill="#e6f2f5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="12" font-weight="400" >MAT → HTTP → JSON</text>
+</svg>

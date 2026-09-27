@@ -1,0 +1,41 @@
+{
+  "verified_at_utc": "2026-09-27T01:27:27.287114+00:00",
+  "scope": "synthetic CPU functional verification; not an accuracy or throughput benchmark",
+  "python": "3.12.14",
+  "platform": "macOS-26.5-arm64-arm-64bit",
+  "torch": "2.5.1",
+  "numpy": "2.1.3",
+  "training_cli": "passed",
+  "http_status": 200,
+  "health": {
+    "architecture": "HybridSN-channel-attention",
+    "schema_version": 1,
+    "status": "ready"
+  },
+  "prediction_shape": [
+    8,
+    8
+  ],
+  "prediction_count": 64,
+  "source_sha256": {
+    "HybridSN卷积模型（flask）/main.py": "1cac75757770670860a0254a484e70db2e1ea4761fd0d8c99ad8f9ecf1558b0e",
+    "HybridSN卷积模型（flask）/predict.py": "179adcd42b85d0972f6dc6e423e579e4bb82d917fa460a9a26c4133d9648fa92",
+    "HybridSN卷积模型（flask）/src/model.py": "8240b2b59e40acf0f5bfced4919daab1f6cd21a2f1219d1c6399b9469aa99bd8",
+    "HybridSN卷积模型（flask）/src/pipeline.py": "804ce45eceafe4ebd8e36f19e5f503204840831534d8d3fc4b1f809e8854da4f",
+    "tools/smoke.py": "3a703c17d91d929f1cd69d3524863e49dc8b38fbf95624532a01c44332f1452d",
+    "tests/test_pipeline.py": "4b639e12c48e277c9f7b16c10e1f7e377d6f0b5e0f75798fdad2750d01157305",
+    "requirements.txt": "260c7fe8ac8766196f2bf7975d5092a12ca8f074be2fb8bf345221f1ee43a25c",
+    "requirements-dev.txt": "446698dabb39bf58615845cdf1edf3c68dee2d81dac6a7797d9fa153a3fa0f7c"
+  },
+  "pytest": {
+    "tests": "23",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "2.076",
+    "warnings": [
+      "NumPy/scikit-learn reference PCA transform emitted divide-by-zero, overflow and invalid-value RuntimeWarnings on this macOS run; finite numerical comparisons passed. Root cause not established."
+    ]
+  },
+  "dependency_check": "pip check: No broken requirements found."
+}
